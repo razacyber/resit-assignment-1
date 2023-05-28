@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- we will use semantics tag ssuch as "header", "nav", "footer" instead of just using "div" and it also improve SEO. -->
+
+<body>
+    <header>
+        <!-- website name/purpose heading -->
+        <div id="left-header">
+            <img id="profilePic" src="./my pic.jpg" alt="profile-pic">
+            <h2><a href="./index.html">PortFolio</a></h2>
+        </div>
+
+        <!-- navlinks to open pages  -->
+        <nav class="col-4">
+            <ul class="min-hide">
+                <!-- <a> tag is used to go to another page/website -->
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a class="active" href="./work.html">Work Experience</a></li>
+                <li><a href="./report.html">Site Report</a></li>
+            </ul>
+        </nav>
+        <nav class="s-nav">
+            <i class="fa fa-bars"></i>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main id="work">
+        <h1>Skills</h1>
+        <section id="skills">
+            <div>
+                <h3>Fast Typing</h3>
+                <p>I got 100+ WPM speed. I used to chat alot in game so it paid off.</p>
+            </div>
+            <div>
+                <h3>HTML & CSS</h3>
+                <p>I have made several websites designed myself with HTML and CSS for 3 years.</p>
+            </div>
+            <div>
+                <h3>JavaScript</h3>
+                <p>Added functionality to my websites and learnt JavaScript.</p>
+            </div>
+        </section>
+        <h1>Work Experience</h1>
+        <section id="experience">
+            <div>
+                <h3>Google</h3>
+                <p>Web Development</p>
+                <p>2021-Present</p>
+            </div>
+            <div>
+                <h3>Tesla</h3>
+                <p>UI/UX Designer</p>
+                <p>2016-2021</p>
+            </div>
+            <div>
+                <h3>Meta</h3>
+                <p>App Development</p>
+                <p>2014-2016</p>
+            </div>
+            <div>
+                <h3>Amazon</h3>
+                <p>Data Science</p>
+                <p>2008-2014</p>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        Developed by <span> Muhammad Raza </span>
+    </footer>
+</body>
+
+</html>

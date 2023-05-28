@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- I will use semantics tag ssuch as "header", "nav", "footer" instead of just using "div" and it also improve SEO. -->
+
+<body>
+    <header>
+        <!-- website name/purpose heading -->
+        <div id="left-header">
+            <img id="profilePic" src="./my pic.jpg" alt="profile-pic">
+            <h2><a href="./index.html">PortFolio</a></h2>
+        </div>
+
+        <!-- navlinks to open pages  -->
+        <nav class="col-4">
+            <ul class="min-hide">
+                <!-- <a> tag is used to go to another page/website -->
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./work.html">Work Experience</a></li>
+                <li><a href="./report.html">Site Report</a></li>
+            </ul>
+        </nav>
+        <nav class="s-nav">
+            <i class="fa fa-bars"></i>
+        </nav>
+    </header>
+
+    <!-- content -->
+    <main id="home">
+        <!-- creating 2 sections, for intro and for image -->
+        <section >
+            <div class="intro-text col-4">
+                <p class="hello">Hello,</p>
+                <h1 class="name">I'm Raza</h1>
+                <h2 class="job-title">UI/UX Developer</h2>
+                <p class="intro">Hello my name is Muhammad Raza and I am full stack web developer.
+                    <!-- random text lorem ipsum -->
+                </p>
+                <a href="./work.html">More About Me</a>
+            </div>
+            <div class="userImage">
+                <img src="./raza.jpg"  alt="srk-pic">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Developed by <span> Muhammad Raza </span>
+    </footer>
+</body>
+
+</html>

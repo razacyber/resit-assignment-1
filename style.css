@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* using columns manually since bootstrap is not allowed */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+.fa-bars {
+    font-size: 32px !important;
+    display: none !important;
+}
+
+.s-nav{
+    display: none;
+}
+
+/********** HEADER ********/
+
+header {
+    /* to put all items in same line and in center, we use FLEXBOX properties  */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+header a.active {
+    border-bottom: 3px solid blue;
+}
+
+header a:hover {
+    color: aqua;
+}
+
+header #left-header {
+    display: flex;
+    align-items: center;
+}
+
+header #left-header #profilePic {
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+header #left-header h2 {
+    margin-left: 6px;
+}
+
+header nav ul {
+    /* putting nav items in same line too */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav li {
+    list-style: none;
+}
+
+main {
+    background-color: #d7d7d7;
+    min-height: 100vh;
+    padding: 0px 50px;
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+footer span {
+    margin-left: 5px;
+    color: greenyellow;
+}
+
+/************ HOME ************/
+main#home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main#home section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#home section .hello {
+    font-weight: 800;
+}
+
+#home section .name {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+#home section .job-title {
+    color: blue;
+}
+
+#home section .intro {
+    font-size: 14px;
+    margin-bottom: 8px;
+    margin-top: 6px;
+}
+
+#home section a {
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background: royalblue;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+#home section a:hover {
+    background-color: rgb(17, 71, 233);
+}
+
+
+
+#home section div.userImage img {
+    height: 400px;
+    width: 400px;
+}
+
+/************ CONTACT ************/
+main#contact {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 10px; */
+    background-color: white;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+}
+
+#contact form label {
+    font-weight: bold;
+}
+
+#contact form input,
+#contact form textarea {
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+#contact form a {
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: royalblue;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+
+
+/************ PORTFOLIO ************/
+
+main#portfolio h1 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#portfolio #projects {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-items: center
+        /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+
+main#portfolio #projects div {
+    text-align: center;
+}
+
+#portfolio #projects p {
+    font-weight: bold;
+}
+
+/************ WORK ************/
+
+main#work h1 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#work #skills {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center
+}
+
+#work #skills div {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    padding: 10px 30px;
+    text-align: center;
+    border: 1px solid rgb(185, 161, 161);
+}
+
+#work #experience {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center
+}
+
+#work #experience div {
+    background-color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 1px; */
+    padding: 10px 30px;
+    box-shadow: rgba(94, 82, 89, 0.4) 0px 5px, rgba(56, 52, 55, 0.3) 0px 10px, rgba(145, 109, 132, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(78, 67, 74, 0.05) 0px 25px;
+}
+
+.random-pic{
+    width: auto;
+    max-width: 100%;
+}
+
+/************ SITE REPORT ************/
+
+main#report h1 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#report li .validateIMG {
+    height: 200px;
+    width: 350px;
+}
+
+
+
+
+
+/* MEDIA QUERIES, for setting view on multiple screen sizes */
+
+@media screen and (max-width: 1300px) {
+    .min-hide {
+        display: none;
+    }
+    #contact form{
+        width: 80%;
+    }
+    .fa-bars {
+        font-size: 32px !important;
+        display: inline-block !important;
+    }
+    .s-nav{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #home section {
+        flex-direction: column-reverse;
+    }
+
+    main {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* height: auto; */
+    }
+
+    .intro-text {
+        width: 100%;
+    }
+    #contact form{
+        width: 100%;
+    }
+    #portfolio #projects{
+        grid-template-columns:repeat(1, 1fr);
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    main#portfolio h1{
+        padding-top: 10px;
+    }
+    #work #skills{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    #work #skills div{
+        margin-bottom: 10px;
+        width: 100%;
+
+    }
+    #work #experience{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    #work #experience div{
+        margin-bottom: 40px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #home section div.userImage img{
+        width: 200px;
+        height: 200px;
+    }
+    #contact{
+       padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width: 352px) {
+    header{
+        padding: 20px 16px;
+    }
+}
